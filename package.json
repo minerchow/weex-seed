@@ -1,0 +1,29 @@
+{
+  "name": "weexproject",
+  "description": "A vue project.",
+  "private": true,
+  "scripts": {
+    "dev": "cooking watch -p",
+    "dist": "cooking build -p",
+    "qrcode": "node build/qrcode.js",
+    "run:ios": "weexpack run ios",
+    "run:android": "weexpack run android",
+    "debug": "weex-devtool"
+  },
+  "license": "ISC",
+  "peerDependencies": {
+    "weex-devtool": "^0.2.76"
+  },
+  "dependencies": {
+    "vue": "^2.1.0",
+    "vue-router": "^2.2.0",
+    "weex-vue-render": "^0.1.8"
+  },
+  "devDependencies": {
+    "cooking-vue2": "*",
+    "eslint-config-weex": "^0.1.5",
+    "ip": "^1.1.4",
+    "qrcode-terminal": "^0.11.0",
+    "weex-loader": "^0.4.1"
+  }
+}
